@@ -8,6 +8,10 @@
 <body class="container mt-2">
   <h1 class="display-4">{{title}}</h1>
   <h1 class="my-2"></h1>
+  @layout('layouts/main')
+  @set('title', title)
+
+  @section('body')
   <p>{{message}}</p>
   <div style="width: 100%"
        class="fixed-bottom bg-secondary p-1">
