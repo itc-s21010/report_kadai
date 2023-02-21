@@ -15,11 +15,21 @@
   <p>{{message}}</p>
   <form method="post" action="/sample">
   <div class="mb-3">
-    <label for="msg" class="form-label">Message</label>
+    <label for="name" class="form-label">Message</label>
     <input type="text" class="form-control"
-      id="msg" name="msg">
+      id="name" name="name">
   </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Message</label>
+      <input type="text" class="form-control"
+             id="email" name="email">
     <button type="submit" class="btn btn-secondary">送信</button>
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Message</label>
+      <input type="text" class="form-control"
+             id="age" name="age">
+    </div>
   </form>
   @end
   <div style="width: 100%"
