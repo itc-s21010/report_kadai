@@ -1,20 +1,11 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-export default class SamplesController {
-  public async index(ctx: HttpContextContract {
-    const msg = 'ID:' + ctx.request.param('id')
-      + ', pass:' + ctx.request.param('pass')
+export default class ReportsController {
+  public async index({view}: HttpContextContract) {
     const data = {
-      title: 'Sample',
-      message: 'これは、SamplesController'
+      title: 'sample',
+      message: 'メッセージを送信',
     }
-    return ctx.view.render('samples/index', data)
-  }
-  public async index_posted(ctx: HttpContextContract) {
-    const data = {
-      title: 'Sample',
-      message: 'こんにちは'
-    }
-    return ctx.view.render('samples/index', data)
+    return view.render('samples/index', data)
   }
 }
