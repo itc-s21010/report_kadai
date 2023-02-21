@@ -13,6 +13,15 @@
 
   @section('body')
   <p>{{message}}</p>
+  <form method="post" action="/sample">
+  <div class="mb-3">
+    <label for="msg" class="form-label">Message</label>
+    <input type="text" class="form-control"
+      id="msg" name="msg">
+  </div>
+    <button type="submit" class="btn btn-secondary">送信</button>
+  </form>
+  @end
   <div style="width: 100%"
        class="fixed-bottom bg-secondary p-1">
     <p class="text-center text-white m-0">
