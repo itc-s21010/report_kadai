@@ -6,6 +6,14 @@ export default class SamplesController {
       title: 'Sample',
       message: 'これは、SamplesController'
     }
-    returnctx.view.render('samples/index', data)
-  })
+    return ctx.view.render('samples/index', data)
+  }
+  public async index_posted(ctx: HttpContextContract) {
+    const msg = ctx.request.input('msg')
+    const data = {
+      title: 'Sample',
+      message: 'こんにちは'
+    }
+    return ctx.view.render('samples/index', data)
+  }
 }
