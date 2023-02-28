@@ -30,4 +30,3 @@ Route.get('/', async ({ view }) => {
 Route.get('/sample', 'SampleController.index')
 
 Route.post('/sample', 'SamplesController.index_posted')
-
